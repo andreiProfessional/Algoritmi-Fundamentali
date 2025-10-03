@@ -7,5 +7,5 @@ add_executable(lab_1 main.cpp
         memorare/memorare.h
         memorare/memorare.cpp
         constante.h
-        teste/teste.h
-        teste/teste.cpp)
+        memorare/teste/teste.h
+        memorare/teste/teste.cpp)
