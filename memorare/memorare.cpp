@@ -4,7 +4,7 @@
 
 void construireMatriceAdiacenta(int &numarNoduri, int &numarMuchii,
                                 bool matriceAdiacenta[NUMAR_MAXIM_NODURI][NUMAR_MAXIM_NODURI], bool grafulEsteOrientat) {
-    std::ifstream in("graf.in");
+    std::ifstream in("altele/graf.in");
     in >> numarNoduri >> numarMuchii;
     for (int i = 0; i < numarNoduri; i++) {
         for (int j = 0; j < numarNoduri; j++) {
@@ -44,7 +44,7 @@ void afisareMatriceAdiacenta(int numarNoduri, bool matriceAdiacenta[NUMAR_MAXIM_
 void construireListeAdiacenta(int &numarNoduri, int &numarMuchii,
                               std::vector<int> listeAdiacenta[NUMAR_MAXIM_NODURI],
                               bool grafulEsteOrientat) {
-    std::ifstream in("graf.in");
+    std::ifstream in("altele/graf.in");
     in >> numarNoduri >> numarMuchii;
     for (int i = 0; i < numarNoduri; i++) {
         listeAdiacenta[i] = std::vector<int>();
@@ -77,7 +77,7 @@ void afisareListeAdiacenta(int numarNoduri, std::vector<int> listeAdiacenta[NUMA
 void transformareMatriceAdiacentaInListeAdiacenta(int numarNoduri,
     bool matriceAdiacenta[NUMAR_MAXIM_NODURI][NUMAR_MAXIM_NODURI], std::vector<int> listeAdiacenta[NUMAR_MAXIM_NODURI]) {
     for (int i = 0; i < numarNoduri; i ++) {
-        listeAdiacenta[i].empty();
+        listeAdiacenta[i] = std::vector<int>();
         for (int j = 0; j < numarNoduri; j ++) {
             if (matriceAdiacenta[i][j]) {
                 listeAdiacenta[i].push_back(j);
