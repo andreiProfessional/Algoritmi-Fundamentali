@@ -62,6 +62,7 @@ void construireListeAdiacenta(int &numarNoduri, int &numarMuchii,
             listeAdiacenta[y].push_back(x);
         }
     }
+    in.close();
 }
 
 void afisareListeAdiacenta(int numarNoduri, std::vector<int> listeAdiacenta[NUMAR_MAXIM_NODURI]) {
