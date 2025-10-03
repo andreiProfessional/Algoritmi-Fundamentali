@@ -1,7 +1,5 @@
 #include "teste.h"
-
 #include <iostream>
-
 #include "../constante.h"
 #include "../memorare/memorare.h"
 
