@@ -1,7 +1,7 @@
 #include "teste.h"
 #include <iostream>
-#include "../constante.h"
-#include "../memorare/memorare.h"
+#include "../../constante.h"
+#include "../memorare.h"
 
 
 void ruleaza_teste() {
