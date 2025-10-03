@@ -2,7 +2,8 @@
 
 
 int main() {
-    ruleaza_teste();
+    // ruleaza_teste();
+
 
 
 
