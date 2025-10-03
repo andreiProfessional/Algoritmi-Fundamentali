@@ -9,4 +9,5 @@ add_executable(lab_1 main.cpp
         constante.h
         memorare/teste/teste.h
         memorare/teste/teste.cpp
-        bfs/bfs.cpp)
+        bfs/bfs.cpp
+        bfs/bfs.h)
