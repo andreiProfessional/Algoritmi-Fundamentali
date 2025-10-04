@@ -4,7 +4,7 @@
 int main() {
     // ruleaza_teste();
 
-
+    bfs();
 
 
     return 0;
